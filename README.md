@@ -65,19 +65,16 @@ NODE_ENV=development
 MONGODB_URI=mongodb://localhost:27017/medli
 
 # For MongoDB Atlas (cloud):
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/medli
+# MONGODB_URI=mongodb+srv://username:pw@cluster.mongodb.net/medli
 
 # JWT Configuration
-JWT_SECRET=your-super-secret-jwt-key-min-64-characters-long-change-this
+JWT_SECRET=your-super-secret-change-this
 JWT_EXPIRE=24h
 
 # CORS Configuration
 CLIENT_URL=http://localhost:3000
 ```
 
-**Important**: Generate a strong JWT secret! You can use:
-```bash
-node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 ```
 
 ### 4. Start MongoDB
